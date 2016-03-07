@@ -1,0 +1,212 @@
+/*
+    Document   : main
+    Created on : 27/01/2016, 01:59:09 PM
+    Author     : Jess
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+/*
+   TODO customize this sample style
+   Syntax recommendation http://www.w3.org/TR/REC-CSS2/
+*/
+
+body {
+    font-family: 'Roboto', 'Helvetica', sans-serif;
+    font-weight: 500;
+    margin: 0;
+    padding: 0;
+    background-color: #EDEDED;
+}
+a {
+    color: rgb(245,124,0);
+    text-decoration: none;
+    font-weight: 600;
+}
+
+#content {
+    padding: 5% 0px;
+}
+
+#div-header {
+    /* margin: 0 auto; */
+    width: 56%;
+    text-align: center;
+    display: inline-block;
+    overflow: hidden;
+    height: 80px;
+    /* padding: 1%; */
+}
+
+#chapter-content{
+/*  width: 700px;*//* display: inline-block; */
+/*  height: 500px;*//* margin-right: 30px; */
+
+}
+#header-line {
+    height: 15px;
+    /*padding-top: 110px;*/
+     background-color: rgb(245,124,0);
+}
+
+#header-main {
+    background-color: rgb(255,152,0);
+    /* background: url("../img/background.png")   fixed center; */
+    /* margin: 0 auto; */
+    /* height: 80px; */
+    padding: 5px 0;
+    text-align: center;
+    /* overflow: hidden; */
+}
+
+#header-wrapper {
+    height: auto;
+    overflow: hidden;
+}
+
+#main-content {
+    width: 90%;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+#footer {
+    color: #D1D1D1;
+    background-color: #424242;
+    font-size: 12px;
+    padding: 30px 10px;
+    text-align: center;
+    line-height: 20px;
+}
+
+#menu-main {
+  color: rgb(255,152,0);
+  /* display: inline-block; */
+  /*float: left;*/
+  padding: 10px;
+  position: absolute;
+  width: 225px;
+  /* background-color: darkblue; */
+  overflow: hidden;
+}
+.all-div {
+    display: inline-block;
+    padding: 2%;
+    margin-bottom: 2%;;
+    /* margin: 40px; */
+    font-weight: 500;
+    background-color: #fff;
+    overflow: hidden
+    width: 95%;
+}
+.sub-chapter {
+  background-color: #00ACC1;
+    box-shadow: 2px 2px 5px #999;
+  color: #fff;
+  margin: 5px 0 0 -27px;
+  padding: 5px 20px 5px 40px;
+  position: absolute;
+  width: 80px;
+  z-index: 5;
+  opacity: 0.8;
+}
+
+.list {
+   font-size: 14px;
+    list-style: none;
+    padding: 0;
+    margin: 0 0 32px;
+}
+
+a {
+  text-decoration: none;
+  font-size: 14px;
+}
+
+a:hover {
+
+}
+/*li:hover {
+
+  background-color: rgb(255,110,64);
+  font-color: #FFF;
+}*/
+#practices-content {
+display: inline-block;
+/*margin-left: 253px;*/
+}
+
+#practices-content {
+  overflow: hidden;
+}
+
+#principal-content-info {
+    color: #9C9C9C;
+    font-size: 14px;
+    line-height: 20px;
+    /* display: inline-block; */
+    overflow: hidden;
+    padding-left: 260px;
+    /* background-color: aquamarine; */
+    /* font-weight: 600; */
+    /* margin-bottom: 38px; */
+}
+
+#main-title {
+   /* color: #402600; */
+   display: inline-block;
+   color: #424242;
+   font-size: 38px;
+   /* margin: 0 0 0 150px; */
+   display: inline-block;
+   overflow: hidden;
+   height: 0 auto;
+   width: 64%;
+   /* border: 1px solid green; */
+   /* font-weight: bolder; */
+   }
+
+#menu-main li {
+  border-bottom: 1px solid #D9D9D9;
+  line-height: 20px;
+  padding: 5px 0px;
+}
+
+.card-resume {
+    background-color: #fff;
+    display: inline-block;
+    font-weight: 50;
+    margin-bottom: 20px;
+    overflow: hidden;
+    text-align: justify;
+    padding: 2%;
+}
+.content-line {
+   background-color: #00ACC1;
+   height: 10px;
+   opacity: 0.5;
+}
+
+.icons-practice {
+   opacity: 0.3;
+}
+
+.logos {
+    display: inline-block;
+    height: 100px;
+    opacity: 0.5;
+    overflow: hidden;
+}
+
+.subtitles-practice {
+  font-size: 14px;
+}
+
+.subtitles {
+  border-bottom: 1px solid #E6E6E6;
+  color: #00ACC1;
+  font-size: 30px;
+  height: 28px;
+  padding: 38px 0 0 0;
+  text-align: center;
+}
