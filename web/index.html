@@ -6,28 +6,32 @@ and open the template in the editor.
 -->
 <html>
     <head>
-        <title>Modelado y Programación</title>
+        <title>Título de la página</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-        <link rel="stylesheet" href="css/main.css">
-        <script src="js/lib/jquery-1.8.2.js"></script>
-        <script src="js/function.js"></script>
+        <link rel="stylesheet" type="text/css" href="lib/bootstrap/css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="css/main.css" media="screen"/>
+
+
+        <script type="text/javascript" src="js/lib/jquery-1.9.1.js"></script>
+        <script type="text/javascript" src="lib/bootstrap/js/bootstrap.min.js"></script>
+        <script type="text/javascript" src="js/function.js"></script>
     </head>
     <body>
         <div id='header-wrapper'>
             <div id="header-main">
                 <img class="logos" src="img/unam.png"/>
                 <div id='div-header'>
-                    <div id="main-title">Modelado y Programación</div>
+                    <h1>Título de la página</h1>
                 </div>
                 <img class="logos" src="img/ciencias.png"/>
             </div>
             <div id='header-line'></div>
         </div>
-        <div id="main-content">
-            <div id='content'>
-                <div id="menu-main"  >
+        <div id="main-content" class="container-fluid">
+            <div id='content' class="row">
+                <div id="menu-main"  class="col-md-2 span3 bs-docs-sidebar">
                     <ul class="list">
                         <li id="cap-0"><a href="#">Introducción</a>
                             <!--                  <ul>
@@ -47,7 +51,7 @@ and open the template in the editor.
                     </ul>
                 </div>
 
-                <div id ="principal-content-info">
+                <div id ="principal-content-info" class="col-md-10">
                     <div class='all-div'>
                         <div class="sub-chapter">Capitulo 1</div>
                         <div id="chapter-resumen" class="card-resume">
@@ -61,7 +65,6 @@ and open the template in the editor.
                                 <div class="subtitles">Material</div><br><br>
                                 <div class="subtitles-practice"><img class="icons-practice" src="img/more.png"/>El triángulo de Sierpinski</div><br><br>
                                 <div class="subtitles-practice"><img class="icons-practice" src="img/more.png"/> Solución a un laberinto con backtracking</div><br><br>
-
                         </div>
                     </div>
                 </div>

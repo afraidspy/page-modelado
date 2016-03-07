@@ -84,8 +84,7 @@ a {
   /* display: inline-block; */
   /*float: left;*/
   padding: 10px;
-  position: absolute;
-  width: 225px;
+/*  width: 225px;*/
   /* background-color: darkblue; */
   overflow: hidden;
 }
@@ -96,17 +95,18 @@ a {
     /* margin: 40px; */
     font-weight: 500;
     background-color: #fff;
-    overflow: hidden
+    overflow: hidden;
     width: 95%;
 }
+
 .sub-chapter {
   background-color: #00ACC1;
-    box-shadow: 2px 2px 5px #999;
+  box-shadow: 2px 2px 5px #999;
   color: #fff;
-  margin: 5px 0 0 -27px;
+  margin: 1% 0 0 -3%;
   padding: 5px 20px 5px 40px;
   position: absolute;
-  width: 80px;
+  width: 130px;
   z-index: 5;
   opacity: 0.8;
 }
@@ -145,8 +145,8 @@ display: inline-block;
     font-size: 14px;
     line-height: 20px;
     /* display: inline-block; */
-    overflow: hidden;
-    padding-left: 260px;
+/*    overflow: hidden;*/
+/*    padding-left: 260px;*/
     /* background-color: aquamarine; */
     /* font-weight: 600; */
     /* margin-bottom: 38px; */
@@ -170,6 +170,8 @@ display: inline-block;
   border-bottom: 1px solid #D9D9D9;
   line-height: 20px;
   padding: 5px 0px;
+  width: 80%;
+  
 }
 
 .card-resume {
@@ -180,6 +182,7 @@ display: inline-block;
     overflow: hidden;
     text-align: justify;
     padding: 2%;
+    width: 100%;
 }
 .content-line {
    background-color: #00ACC1;
@@ -207,6 +210,6 @@ display: inline-block;
   color: #00ACC1;
   font-size: 30px;
   height: 28px;
-  padding: 38px 0 0 0;
   text-align: center;
+  width: 100%;
 }
