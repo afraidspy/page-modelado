@@ -153,11 +153,12 @@ $(document).ready(function(){
     
 
     console.log(info.info[1]);
- 
-    $("li a").css("color","rgb(245,124,0)");
-    $("#"+$(this).attr("id") + " a").css("color","#fff");
-    $("#"+$(this).attr("id")).css("background-color","rgb(245,124,0");
-    $("#"+$(this).attr("id")).css("padding","8px 16px 8px 2px");
+
+//      $(this).addClass("active");
+//    $("li a").css("color","rgb(245,124,0)");
+//    $("#"+$(this).attr("id") + " a").css("color","#fff");
+//    $("#"+$(this).attr("id")).css("background-color","rgb(245,124,0");
+//    $("#"+$(this).attr("id")).css("padding","8px 16px 8px 2px");
  
     console.log($(this).attr("id") + " a");
 
