@@ -6,6 +6,25 @@
 
 $(document).ready(function(){
 
+   $.ajax({
+       url: "http://127.0.0.1:5984/paginas/182a3634ce7886abcd136ea84c00202f?rev=2-9628d0ea6418582fae9ff33ec0a2d756",
+       type: "GET",
+       contentType: "application/json",
+//       charset: "UTF-8",
+       //contentType: "application/x-www-form-urlencoded;charset=UTF-8",
+       async: true,
+       success: function (data){
+//        console.log   (data);
+       }
+   });
+
+
+//  console.log("Antes de basde de datos");
+//
+//    var db = $.couch.db('paginas');
+//
+//    console.log("La base de datos es: " + db);
+
   var info = {
     "info":[{
       title: "Introducción",
@@ -159,6 +178,7 @@ $(document).ready(function(){
 //    $("#"+$(this).attr("id") + " a").css("color","#fff");
 //    $("#"+$(this).attr("id")).css("background-color","rgb(245,124,0");
 //    $("#"+$(this).attr("id")).css("padding","8px 16px 8px 2px");
+  
  
     console.log($(this).attr("id") + " a");
 
