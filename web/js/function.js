@@ -2,7 +2,7 @@
  * To change this template, choose Tools | Templates
  * and open the template in the editor.
  */
-
+var info = null;
 
 $(document).ready(function(){
   //
@@ -21,20 +21,20 @@ $(document).ready(function(){
   //
   //
 
-  $.ajax({
-    url: "http://127.0.0.1:5984/paginas/182a3634ce7886abcd136ea84c00202f?rev=3-b6702d5eac7b34ac5203680048b12375",
-    //        url: "http://127.0.0.1:5984/paginas/182a3634ce7886abcd136ea84c00202f",
-    type: "GET",
-    //    dataType: "jsonp",
-    dataType: "application/json",
-    //       charset: "UTF-8",
-    //contentType: "application/x-www-form-urlencoded;charset=UTF-8",
-    async: true,
-    success: function (data){
-      console.log("Contenido");
-      console.log(JSON.stringify(data));
-    }
-  })
+  //  $.ajax({
+  //    url: "http://127.0.0.1:5984/paginas/182a3634ce7886abcd136ea84c00202f?rev=3-b6702d5eac7b34ac5203680048b12375",
+  //    //        url: "http://127.0.0.1:5984/paginas/182a3634ce7886abcd136ea84c00202f",
+  //    type: "GET",
+  //    //    dataType: "jsonp",
+  //    dataType: "application/json",
+  //    //       charset: "UTF-8",
+  //    //contentType: "application/x-www-form-urlencoded;charset=UTF-8",
+  //    async: true,
+  //    success: function (data){
+  //      console.log("Contenido");
+  //      console.log(JSON.stringify(data));
+  //    }
+  //  })
 
 
   //  console.log("Antes de basde de datos");
@@ -43,7 +43,7 @@ $(document).ready(function(){
   //
   //    console.log("La base de datos es: " + db);
 
-  var info = {
+  info = {
     "info":[{
       title: "Introducción",
       contenido: "El presente sitio contiene el material necesario para la realización del conjuto de prácticas las cuáles se desarrollaron como material"+
@@ -70,9 +70,10 @@ $(document).ready(function(){
       " en cursos anteriores, pues la importancia del mismo es servir como herramienta para que él pueda dar"+
       " soluciones simples a problemas específicos. Además se da a conocer una de las técnicas más completas de"+
       " recursión llamada vuelta atrás o backtracking.",
-      material: [{
+      material: [
+      {
         practicas: [{
-          title: "Práctica 1",
+          title: "Práctica 1: El triángulo de Sierpnski",
           archivos:[{
             name : "Estado.java",
             path : "/Material/Cap1/Laberinto/Material/Estado.java",
@@ -89,7 +90,28 @@ $(document).ready(function(){
             description: "Contiene la clase del laberinto."
           }
           ]
-        }]
+        },
+        {
+          title: "Práctica 2",
+          archivos:[{
+            name : "Estado.java",
+            path : "/Material/Cap1/Laberinto/Material/Estado.java",
+            description: "Contiene los estados para el Laberinto"
+          },
+          {
+            name : "EventosBotones.java",
+            path : "/Material/Cap1/Laberinto/Material/EventosBotones.java",
+            description: "Contiene los eventos de los botones"
+          },
+          {
+            name : "Laberinto.java",
+            path : "/Material/Cap1/Laberinto/Material/Laberinto.java",
+            description: "Contiene la clase del laberinto."
+          }
+          ]
+        }
+
+        ]
       }]
     },
     {
@@ -179,26 +201,8 @@ $(document).ready(function(){
   
   $("li").click(function(){
     var chapter = $(this).attr("id").split("-")[1];
-    put_information(info.info[chapter].title, info.info[chapter].contenido, info.info[chapter].material);
-    //    if (id == "introduccion"){
-    //      put_information("Bienvenido", info.info[0]);
-    //    }else {
-    //
-    //    }
     
-    
-    
-
-    console.log(info.info[1]);
-
-    //      $(this).addClass("active");
-    //    $("li a").css("color","rgb(245,124,0)");
-    //    $("#"+$(this).attr("id") + " a").css("color","#fff");
-    //    $("#"+$(this).attr("id")).css("background-color","rgb(245,124,0");
-    //    $("#"+$(this).attr("id")).css("padding","8px 16px 8px 2px");
-  
- 
-    console.log($(this).attr("id") + " a");
+    put_information(info.info[chapter].title, info.info[chapter].contenido, info.info[chapter].material[0]);
 
   
   });
@@ -206,18 +210,61 @@ $(document).ready(function(){
 });
 
 
-function put_information(subtitle, text, files){
+function put_information(subtitle, text, practices){
+  console.log("Contenidos de prácticas");
+  console.log(practices);
 
-
+    
   $("#chapter-resumen").html(
     "<div class='subtitles'>"+subtitle+"</div><br><br>"+
     text+
-    "<>"
+    "</div>"
     );
 
-  if (files != undefined)    {
-    console.log("Las prácticas son: ");
-    console.log(files);
+//     practices = practices.practicas;
+
+  //Código para mostrar los archivos de cada capítulo en forma de tabla.
+  if (practices != undefined)    {
+
+    var material = "";
+    var files = null;
+
+    for ( i = 0; i < practices.length; i++) {// Se recorre cada práctica
+      files = practices.practicas;
+      console.log("Contenido de files es:");
+      console.log(files);
+      material += "<div class='subtitles-practice'><img class='icons-practice' src='img/more.png'/>"+practices[i].title+"</div>";
+
+      for (j = 0; j < files.length; j++){ // Se recorre cada archivo de la práctica
+
+
+        if (i ==0) {
+          material += "<table class='table table-striped'>";
+      //      "<tr><th>Nombre</th>"+
+      //      "<th>Descripción</th>"+
+    //      "<th>Descargar</th>"+
+    //      "</tr>";
+
+        }
+        console.log("RUTA: " + files[i].path);
+
+        material += "<tr><td>"+files[i].name+"<td>"+
+        "<td>"+files[i].description+"<td>"+
+        "<td><a href='"+files[i].path+"' class='btn btn-info btn-lg'>"+
+        "<span class='glyphicon glyphicon-download'></span> Descargar"+
+        "</a></td>"
+        +"</tr>";
+       }
+    
+
+    material += "</table>";
+
+    console.log(material);
+    }
+    $("#practices-content").html(material);
+
   }
+
+
 }
 
