@@ -590,30 +590,23 @@ function put_information(subtitle, text, practices){
     var material = "";
     var files = null;
 
-    console.log("cANTIDAD DE PRACTICAS "+ practices.length  );
 
     for ( i = 0; i < practices.length; i++) {// Se recorre cada práctica
-
       if (i == 0) {
         material+= "<div class='subtitles'>Material</div><br><br> ";
       }
+
       files = practices[i].archivos;
-      console.log("Contenido de files es:");
-      console.log(files);
       material += "<div class='subtitles-practice'><img class='icons-practice' src='img/more.png'/>"+practices[i].title+"</div>";
 
       for (j = 0; j < files.length; j++){ // Se recorre cada archivo de la práctica
-
-
         if (j ==0) {
           material += "<table class='table table-striped'>";
         //      "<tr><th>Nombre</th>"+
         //      "<th>Descripción</th>"+
         //      "<th>Descargar</th>"+
         //      "</tr>";
-
         }
-
         material += "<tr><td>"+files[i].name+"<td>"+
         "<td>"+files[i].description+"<td>"+
         "<td><a href='"+files[i].path+"' class='btn btn-info btn-lg'>"+
@@ -621,14 +614,9 @@ function put_information(subtitle, text, practices){
         "</a></td>"
         +"</tr>";
       }
-    
-
       material += "</table>";
     }
   }
   $("#practices-content").html(material);
-
-
-
 }
 
