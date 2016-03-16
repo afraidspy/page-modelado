@@ -557,13 +557,16 @@ $(document).ready(function(){
 
     console.log("Viendo el capítulo " + chapter);  
   
-  
-    if (chapter == 0)
+
+    if (chapter == 0){
+      $("#material").css("display", "none");
       put_information(info.info[0].title, info.info[0].contenido);
-    else{
+    }else{
+      var material = info.info[chapter].material[0].practicas;
+      console.log("Material");
+      console.log(material);
       $("#material").css("display", "block");
       put_information(info.info[chapter].title, info.info[chapter].contenido, material);
-
     }
 
   
@@ -586,6 +589,10 @@ function put_information(subtitle, text, practices){
 
   //Código para mostrar los archivos de cada capítulo en forma de tabla.
   if (practices != null)    {
+
+    console.log("Practices");
+
+    console.log(practices);
 
     var material = "";
     var files = null;
