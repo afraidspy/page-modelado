@@ -76,17 +76,17 @@ $(document).ready(function(){
           title: "Práctica 1: El triángulo de Sierpnski",
           archivos:[{
             name : "Estado.java",
-            path : "/Material/Cap1/Laberinto/Material/Estado.java",
+            path : "../Material/Cap1/Laberinto/Material/Estado.java",
             description: "Contiene los estados para el Laberinto"
           },
           {
             name : "EventosBotones.java",
-            path : "/Material/Cap1/Laberinto/Material/EventosBotones.java",
+            path : "../Material/Cap1/Laberinto/Material/EventosBotones.java",
             description: "Contiene los eventos de los botones"
           },
           {
             name : "Laberinto.java",
-            path : "/Material/Cap1/Laberinto/Material/Laberinto.java",
+            path : "../Material/Cap1/Laberinto/Material/Laberinto.java",
             description: "Contiene la clase del laberinto."
           }
           ]
@@ -94,18 +94,19 @@ $(document).ready(function(){
         {
           title: "Práctica 2",
           archivos:[{
+
             name : "Estado.java",
-            path : "/Material/Cap1/Laberinto/Material/Estado.java",
+            path : "../Material/Cap1/Laberinto/Material/Estado.java",
             description: "Contiene los estados para el Laberinto"
           },
           {
             name : "EventosBotones.java",
-            path : "/Material/Cap1/Laberinto/Material/EventosBotones.java",
+            path : "../Material/Cap1/Laberinto/Material/EventosBotones.java",
             description: "Contiene los eventos de los botones"
           },
           {
             name : "Laberinto.java",
-            path : "/Material/Cap1/Laberinto/Material/Laberinto.java",
+            path : "../Material/Cap1/Laberinto/Material/Laberinto.java",
             description: "Contiene la clase del laberinto."
           }
           ]
@@ -117,80 +118,432 @@ $(document).ready(function(){
     {
       title: "Árboles en memoria secundaria",
       contenido: "En este capítulo el lector practicará la implementación de estructuras de datos que funcionan en "+
-    " memoria secundaria, sus características y operaciones principales. Los tipos de estructuras que se presentan "+
-    " en este capítulo son: árboles B y árboles rojinegros. <br><br>La importancia de conocer estas estructuras, es la "+
-    " necesidad de realizar sistemas que empleen estructuras de datos, cuyo acceso a estos datos sea eficiente en "+
-    " tiempo."
+      " memoria secundaria, sus características y operaciones principales. Los tipos de estructuras que se presentan "+
+      " en este capítulo son: árboles B y árboles rojinegros. <br><br>La importancia de conocer estas estructuras, es la "+
+      " necesidad de realizar sistemas que empleen estructuras de datos, cuyo acceso a estos datos sea eficiente en "+
+      " tiempo.",
+      material: [
+      {
+        practicas: [{
+          title: "Práctica 1: El triángulo de Sierpnski",
+          archivos:[{
+            name : "Estado.java",
+            path : "../Material/Cap1/Laberinto/Material/Estado.java",
+            description: "Contiene los estados para el Laberinto"
+          },
+          {
+            name : "EventosBotones.java",
+            path : "../Material/Cap1/Laberinto/Material/EventosBotones.java",
+            description: "Contiene los eventos de los botones"
+          },
+          {
+            name : "Laberinto.java",
+            path : "../Material/Cap1/Laberinto/Material/Laberinto.java",
+            description: "Contiene la clase del laberinto."
+          }
+          ]
+        },
+        {
+          title: "Práctica 2",
+          archivos:[{
+
+            name : "Estado.java",
+            path : "../Material/Cap1/Laberinto/Material/Estado.java",
+            description: "Contiene los estados para el Laberinto"
+          },
+          {
+            name : "EventosBotones.java",
+            path : "../Material/Cap1/Laberinto/Material/EventosBotones.java",
+            description: "Contiene los eventos de los botones"
+          },
+          {
+            name : "Laberinto.java",
+            path : "../Material/Cap1/Laberinto/Material/Laberinto.java",
+            description: "Contiene la clase del laberinto."
+          }
+          ]
+        }
+
+        ]
+      }]
     },
     {
       title: "UML",
       contenido: "Se da a conocer un lenguaje unificado de modelado que permite especificar, visualizar, construir "+
-    " y documentar elementos de un sistema de software. Es importante presentar este tema porque es una "+
-    " herramienta para construir un conjunto de diagramas del sistema antes de que éste sea codificado. <br><br>Entre los "+
-    " principales diagramas que el lector practicará, se tienen los siguientes: diagrama general de casos de uso; "+
-    " diagrama detallado de casos de uso; diagrama de clases; y diagrama de estados. Para cada diagrama se explican los elementos que lo conforman, la estructura general del mismo y un ejemplo en el que se aplica, para "+
-    " que después el lector pueda fácilmente poner en práctica sus conocimientos en el problema que se le plantea. "
+      " y documentar elementos de un sistema de software. Es importante presentar este tema porque es una "+
+      " herramienta para construir un conjunto de diagramas del sistema antes de que éste sea codificado. <br><br>Entre los "+
+      " principales diagramas que el lector practicará, se tienen los siguientes: diagrama general de casos de uso; "+
+      " diagrama detallado de casos de uso; diagrama de clases; y diagrama de estados. Para cada diagrama se explican los elementos que lo conforman, la estructura general del mismo y un ejemplo en el que se aplica, para "+
+      " que después el lector pueda fácilmente poner en práctica sus conocimientos en el problema que se le plantea. ",
+      material: [
+      {
+        practicas: [{
+          title: "Práctica 1: El triángulo de Sierpnski",
+          archivos:[{
+            name : "Estado.java",
+            path : "../Material/Cap1/Laberinto/Material/Estado.java",
+            description: "Contiene los estados para el Laberinto"
+          },
+          {
+            name : "EventosBotones.java",
+            path : "../Material/Cap1/Laberinto/Material/EventosBotones.java",
+            description: "Contiene los eventos de los botones"
+          },
+          {
+            name : "Laberinto.java",
+            path : "../Material/Cap1/Laberinto/Material/Laberinto.java",
+            description: "Contiene la clase del laberinto."
+          }
+          ]
+        },
+        {
+          title: "Práctica 2",
+          archivos:[{
+
+            name : "Estado.java",
+            path : "../Material/Cap1/Laberinto/Material/Estado.java",
+            description: "Contiene los estados para el Laberinto"
+          },
+          {
+            name : "EventosBotones.java",
+            path : "../Material/Cap1/Laberinto/Material/EventosBotones.java",
+            description: "Contiene los eventos de los botones"
+          },
+          {
+            name : "Laberinto.java",
+            path : "../Material/Cap1/Laberinto/Material/Laberinto.java",
+            description: "Contiene la clase del laberinto."
+          }
+          ]
+        }
+
+        ]
+      }]
     },
     {
       title: "Cohesión y acoplamiento",
       contenido: "Se incluyen prácticas que le permitirán al lector analizar dos criterios cualitativos del software: "+
-    " cohesión y acoplamiento, los cuáles permiten medir el grado de relación entre los componentes de un "+
-    " sistema. <br><br>El objetivo es que el programador aprenda a realizar módulos dentro del sistema que sean "+
-    " independientes, fáciles de probar y de reutilizar. Como consecuencia se debe de cumplir con el siguiente "+
-    " criterio: un sistema debe poseer una alta cohesión y un bajo acoplamiento. Se dan a conocer diferentes tipos "+
-    " de cohesión y de acoplamiento, incluyendo sus características generales."
+      " cohesión y acoplamiento, los cuáles permiten medir el grado de relación entre los componentes de un "+
+      " sistema. <br><br>El objetivo es que el programador aprenda a realizar módulos dentro del sistema que sean "+
+      " independientes, fáciles de probar y de reutilizar. Como consecuencia se debe de cumplir con el siguiente "+
+      " criterio: un sistema debe poseer una alta cohesión y un bajo acoplamiento. Se dan a conocer diferentes tipos "+
+      " de cohesión y de acoplamiento, incluyendo sus características generales.",
+      material: [
+      {
+        practicas: [{
+          title: "Práctica 1: El triángulo de Sierpnski",
+          archivos:[{
+            name : "Estado.java",
+            path : "../Material/Cap1/Laberinto/Material/Estado.java",
+            description: "Contiene los estados para el Laberinto"
+          },
+          {
+            name : "EventosBotones.java",
+            path : "../Material/Cap1/Laberinto/Material/EventosBotones.java",
+            description: "Contiene los eventos de los botones"
+          },
+          {
+            name : "Laberinto.java",
+            path : "../Material/Cap1/Laberinto/Material/Laberinto.java",
+            description: "Contiene la clase del laberinto."
+          }
+          ]
+        },
+        {
+          title: "Práctica 2",
+          archivos:[{
+
+            name : "Estado.java",
+            path : "../Material/Cap1/Laberinto/Material/Estado.java",
+            description: "Contiene los estados para el Laberinto"
+          },
+          {
+            name : "EventosBotones.java",
+            path : "../Material/Cap1/Laberinto/Material/EventosBotones.java",
+            description: "Contiene los eventos de los botones"
+          },
+          {
+            name : "Laberinto.java",
+            path : "../Material/Cap1/Laberinto/Material/Laberinto.java",
+            description: "Contiene la clase del laberinto."
+          }
+          ]
+        }
+
+        ]
+      }]
     },
     {
       title: "Patrones de diseño",
       contenido: "Este capítulo incluye prácticas en donde el lector aplicará diferentes tipos de patrones en el diseño "+
-    " de software, así contará con más herramientas que le permitirán dar soluciones generales a problemas en "+
-    " común, aumentando la calidad de sus productos de software. <br><br>Aquí se presentan los patrones clasificados "+
-    " de acuerdo a su propósito: creacionales, estructurales y de comportamiento. De cada patrón se describe "+
-    " el problema en el que se puede aplicar y se ejemplifica con un diagrama su estructura general para su "+
-    " mejor comprensión; además por cada clasificación se plantean dos prácticas al lector en donde hará uso de "+
-    " diferentes patrones de diseño."
+      " de software, así contará con más herramientas que le permitirán dar soluciones generales a problemas en "+
+      " común, aumentando la calidad de sus productos de software. <br><br>Aquí se presentan los patrones clasificados "+
+      " de acuerdo a su propósito: creacionales, estructurales y de comportamiento. De cada patrón se describe "+
+      " el problema en el que se puede aplicar y se ejemplifica con un diagrama su estructura general para su "+
+      " mejor comprensión; además por cada clasificación se plantean dos prácticas al lector en donde hará uso de "+
+      " diferentes patrones de diseño.",
+      material: [
+      {
+        practicas: [{
+          title: "Práctica 1: El triángulo de Sierpnski",
+          archivos:[{
+            name : "Estado.java",
+            path : "../Material/Cap1/Laberinto/Material/Estado.java",
+            description: "Contiene los estados para el Laberinto"
+          },
+          {
+            name : "EventosBotones.java",
+            path : "../Material/Cap1/Laberinto/Material/EventosBotones.java",
+            description: "Contiene los eventos de los botones"
+          },
+          {
+            name : "Laberinto.java",
+            path : "../Material/Cap1/Laberinto/Material/Laberinto.java",
+            description: "Contiene la clase del laberinto."
+          }
+          ]
+        },
+        {
+          title: "Práctica 2",
+          archivos:[{
+
+            name : "Estado.java",
+            path : "../Material/Cap1/Laberinto/Material/Estado.java",
+            description: "Contiene los estados para el Laberinto"
+          },
+          {
+            name : "EventosBotones.java",
+            path : "../Material/Cap1/Laberinto/Material/EventosBotones.java",
+            description: "Contiene los eventos de los botones"
+          },
+          {
+            name : "Laberinto.java",
+            path : "../Material/Cap1/Laberinto/Material/Laberinto.java",
+            description: "Contiene la clase del laberinto."
+          }
+          ]
+        }
+
+        ]
+      }]
     },
     {
       title: "Construcción de interfaces gráficas",
       contenido: "Los capítulos anteriores piden la elaboración de prácticas sin importar la interfaz que se le presente "+
-    " al usuario. En este capítulo el lector entenderá la importancia de mostrar una interfaz gráfica que permita "+
-    " facilitar el uso de la aplicación. <br><br>Para cumplir con el objetivo, se ilustra la construcción de una interfaz "+
-    " gráfica de usuario (GUI), haciendo uso de bibliotecas especiales del lenguaje de programación Java. Se "+
-    " muestran los componentes y clases principales que permiten la construcción de una interfaz. Así, después "+
-    " de que el lector se familiarice con tales bibliotecas y elementos, se le presenta la forma en que puede agregar "+
-    " funcionalidad a la interfaz, para ello se le muestra cómo manejar los eventos del usuario, a través de clases "+
-    " específicas."
+      " al usuario. En este capítulo el lector entenderá la importancia de mostrar una interfaz gráfica que permita "+
+      " facilitar el uso de la aplicación. <br><br>Para cumplir con el objetivo, se ilustra la construcción de una interfaz "+
+      " gráfica de usuario (GUI), haciendo uso de bibliotecas especiales del lenguaje de programación Java. Se "+
+      " muestran los componentes y clases principales que permiten la construcción de una interfaz. Así, después "+
+      " de que el lector se familiarice con tales bibliotecas y elementos, se le presenta la forma en que puede agregar "+
+      " funcionalidad a la interfaz, para ello se le muestra cómo manejar los eventos del usuario, a través de clases "+
+      " específicas.",
+      material: [
+      {
+        practicas: [{
+          title: "Práctica 1: El triángulo de Sierpnski",
+          archivos:[{
+            name : "Estado.java",
+            path : "../Material/Cap1/Laberinto/Material/Estado.java",
+            description: "Contiene los estados para el Laberinto"
+          },
+          {
+            name : "EventosBotones.java",
+            path : "../Material/Cap1/Laberinto/Material/EventosBotones.java",
+            description: "Contiene los eventos de los botones"
+          },
+          {
+            name : "Laberinto.java",
+            path : "../Material/Cap1/Laberinto/Material/Laberinto.java",
+            description: "Contiene la clase del laberinto."
+          }
+          ]
+        },
+        {
+          title: "Práctica 2",
+          archivos:[{
+
+            name : "Estado.java",
+            path : "../Material/Cap1/Laberinto/Material/Estado.java",
+            description: "Contiene los estados para el Laberinto"
+          },
+          {
+            name : "EventosBotones.java",
+            path : "../Material/Cap1/Laberinto/Material/EventosBotones.java",
+            description: "Contiene los eventos de los botones"
+          },
+          {
+            name : "Laberinto.java",
+            path : "../Material/Cap1/Laberinto/Material/Laberinto.java",
+            description: "Contiene la clase del laberinto."
+          }
+          ]
+        }
+
+        ]
+      }]
     },
     {
       title: "Modelo Vista Controlador",
       contenido: "Hoy en día, el diseño y desarrollo de programas cuyo mantenimiento y reutilización sea fácil de "+
-    " aplicar es indispensable, por ello este capítulo presenta uno de los patrones de diseño más usado en el "+
-    " desarrollo de software. Aplicar este patrón para realizar una aplicación permite una organización de la "+
-    " misma en tres capas, separando así la lógica del sistema, de su representación visual y del manejo de los "+
-    " eventos de ésta.<br><br> Aquí el lector implementará el patrón en las prácticas que se le presentan y al mismo "+
-    " tiempo podrá darse cuenta de las ventajas de estructurar un sistema bajo este esquema."
+      " aplicar es indispensable, por ello este capítulo presenta uno de los patrones de diseño más usado en el "+
+      " desarrollo de software. Aplicar este patrón para realizar una aplicación permite una organización de la "+
+      " misma en tres capas, separando así la lógica del sistema, de su representación visual y del manejo de los "+
+      " eventos de ésta.<br><br> Aquí el lector implementará el patrón en las prácticas que se le presentan y al mismo "+
+      " tiempo podrá darse cuenta de las ventajas de estructurar un sistema bajo este esquema.",
+      material: [
+      {
+        practicas: [{
+          title: "Práctica 1: El triángulo de Sierpnski",
+          archivos:[{
+            name : "Estado.java",
+            path : "../Material/Cap1/Laberinto/Material/Estado.java",
+            description: "Contiene los estados para el Laberinto"
+          },
+          {
+            name : "EventosBotones.java",
+            path : "../Material/Cap1/Laberinto/Material/EventosBotones.java",
+            description: "Contiene los eventos de los botones"
+          },
+          {
+            name : "Laberinto.java",
+            path : "../Material/Cap1/Laberinto/Material/Laberinto.java",
+            description: "Contiene la clase del laberinto."
+          }
+          ]
+        },
+        {
+          title: "Práctica 2",
+          archivos:[{
+
+            name : "Estado.java",
+            path : "../Material/Cap1/Laberinto/Material/Estado.java",
+            description: "Contiene los estados para el Laberinto"
+          },
+          {
+            name : "EventosBotones.java",
+            path : "../Material/Cap1/Laberinto/Material/EventosBotones.java",
+            description: "Contiene los eventos de los botones"
+          },
+          {
+            name : "Laberinto.java",
+            path : "../Material/Cap1/Laberinto/Material/Laberinto.java",
+            description: "Contiene la clase del laberinto."
+          }
+          ]
+        }
+
+        ]
+      }]
     },
     {
       title: "Programación concurrente",
       contenido: "En este capítulo se presentan prácticas que permitirán al lector conocer los conceptos básicos para "+
-    " crear aplicaciones en las que existan diferentes procesos ejecutándose al mismo tiempo, ya que hoy en día "+
-    " los sistemas reales requieren de un tiempo de ejecución pequeño. Lo anterior se logra aplicando técnicas "+
-    " de tiempo compartido para ejecutar programas concurrentes. <br><br>Aquí se describen de forma general algunas "+
-    " técnicas como: monitores, el problema del productor-consumidor y semáforos, al mismo tiempo que se "+
-    " describe su implementación en Java. Además el capítulo incluye una sección que presenta una breve "+
-    " introducción al tema de simulación por computadora como herramienta para imitar la realidad. Esta técnica "+
-    " es útil para el lector, ya que en diversas ocasiones es necesario comprender el comportamiento de un sistema "+
-    " aprovechando todas las potencialidades de una computadora."
+      " crear aplicaciones en las que existan diferentes procesos ejecutándose al mismo tiempo, ya que hoy en día "+
+      " los sistemas reales requieren de un tiempo de ejecución pequeño. Lo anterior se logra aplicando técnicas "+
+      " de tiempo compartido para ejecutar programas concurrentes. <br><br>Aquí se describen de forma general algunas "+
+      " técnicas como: monitores, el problema del productor-consumidor y semáforos, al mismo tiempo que se "+
+      " describe su implementación en Java. Además el capítulo incluye una sección que presenta una breve "+
+      " introducción al tema de simulación por computadora como herramienta para imitar la realidad. Esta técnica "+
+      " es útil para el lector, ya que en diversas ocasiones es necesario comprender el comportamiento de un sistema "+
+      " aprovechando todas las potencialidades de una computadora.",
+      material: [
+      {
+        practicas: [{
+          title: "Práctica 1: El triángulo de Sierpnski",
+          archivos:[{
+            name : "Estado.java",
+            path : "../Material/Cap1/Laberinto/Material/Estado.java",
+            description: "Contiene los estados para el Laberinto"
+          },
+          {
+            name : "EventosBotones.java",
+            path : "../Material/Cap1/Laberinto/Material/EventosBotones.java",
+            description: "Contiene los eventos de los botones"
+          },
+          {
+            name : "Laberinto.java",
+            path : "../Material/Cap1/Laberinto/Material/Laberinto.java",
+            description: "Contiene la clase del laberinto."
+          }
+          ]
+        },
+        {
+          title: "Práctica 2",
+          archivos:[{
+
+            name : "Estado.java",
+            path : "../Material/Cap1/Laberinto/Material/Estado.java",
+            description: "Contiene los estados para el Laberinto"
+          },
+          {
+            name : "EventosBotones.java",
+            path : "../Material/Cap1/Laberinto/Material/EventosBotones.java",
+            description: "Contiene los eventos de los botones"
+          },
+          {
+            name : "Laberinto.java",
+            path : "../Material/Cap1/Laberinto/Material/Laberinto.java",
+            description: "Contiene la clase del laberinto."
+          }
+          ]
+        }
+
+        ]
+      }]
     },
     {
       title: "Pruebas de software",
       contenido: "Para finalizar este manual, se presenta un capítulo en el que el lector conocerá algunas técnicas que "+
-    " le permitirán verificar que el software que realice satisface las necesidades de su cliente.<br><br> Las pruebas le "+
-    " ayudarán a encontrar defectos y errores que servirán para evaluar las características del mismo. Aunque se "+
-    " dan a conocer los diferentes tipos de pruebas que son clasificadas de acuerdo al nivel en que se aplican, en "+
-    " las prácticas se usan las pruebas de caja blanca, caja negra y pruebas unitarias. En éstas últimas se hace uso "+
-    " del marco de trabajo JUnit para Java y se presentan las clases esenciales para la creación de una prueba "+
-    " unitaria."
+      " le permitirán verificar que el software que realice satisface las necesidades de su cliente.<br><br> Las pruebas le "+
+      " ayudarán a encontrar defectos y errores que servirán para evaluar las características del mismo. Aunque se "+
+      " dan a conocer los diferentes tipos de pruebas que son clasificadas de acuerdo al nivel en que se aplican, en "+
+      " las prácticas se usan las pruebas de caja blanca, caja negra y pruebas unitarias. En éstas últimas se hace uso "+
+      " del marco de trabajo JUnit para Java y se presentan las clases esenciales para la creación de una prueba "+
+      " unitaria.",
+      material: [
+      {
+        practicas: [{
+          title: "Práctica 1: El triángulo de Sierpnski",
+          archivos:[{
+            name : "Estado.java",
+            path : "../Material/Cap1/Laberinto/Material/Estado.java",
+            description: "Contiene los estados para el Laberinto"
+          },
+          {
+            name : "EventosBotones.java",
+            path : "../Material/Cap1/Laberinto/Material/EventosBotones.java",
+            description: "Contiene los eventos de los botones"
+          },
+          {
+            name : "Laberinto.java",
+            path : "../Material/Cap1/Laberinto/Material/Laberinto.java",
+            description: "Contiene la clase del laberinto."
+          }
+          ]
+        },
+        {
+          title: "Práctica 2",
+          archivos:[{
+
+            name : "Estado.java",
+            path : "../Material/Cap1/Laberinto/Material/Estado.java",
+            description: "Contiene los estados para el Laberinto"
+          },
+          {
+            name : "EventosBotones.java",
+            path : "../Material/Cap1/Laberinto/Material/EventosBotones.java",
+            description: "Contiene los eventos de los botones"
+          },
+          {
+            name : "Laberinto.java",
+            path : "../Material/Cap1/Laberinto/Material/Laberinto.java",
+            description: "Contiene la clase del laberinto."
+          }
+          ]
+        }
+
+        ]
+      }]
 
     }
     ]
@@ -201,8 +554,17 @@ $(document).ready(function(){
   
   $("li").click(function(){
     var chapter = $(this).attr("id").split("-")[1];
-    
-    put_information(info.info[chapter].title, info.info[chapter].contenido, info.info[chapter].material[0]);
+
+    console.log("Viendo el capítulo " + chapter);  
+  
+  
+    if (chapter == 0)
+      put_information(info.info[0].title, info.info[0].contenido);
+    else{
+      $("#material").css("display", "block");
+      put_information(info.info[chapter].title, info.info[chapter].contenido, material);
+
+    }
 
   
   });
@@ -211,26 +573,31 @@ $(document).ready(function(){
 
 
 function put_information(subtitle, text, practices){
-  console.log("Contenidos de prácticas");
-  console.log(practices);
+  console.log("2Practrices es "  + practices);
+  console.log("Subtitle " + subtitle);
+  console.log("Texto: " + text);
 
     
   $("#chapter-resumen").html(
     "<div class='subtitles'>"+subtitle+"</div><br><br>"+
     text+
     "</div>"
-    );
-
-//     practices = practices.practicas;
+    );  
 
   //Código para mostrar los archivos de cada capítulo en forma de tabla.
-  if (practices != undefined)    {
+  if (practices != null)    {
 
     var material = "";
     var files = null;
 
+    console.log("cANTIDAD DE PRACTICAS "+ practices.length  );
+
     for ( i = 0; i < practices.length; i++) {// Se recorre cada práctica
-      files = practices.practicas;
+
+      if (i == 0) {
+        material+= "<div class='subtitles'>Material</div><br><br> ";
+      }
+      files = practices[i].archivos;
       console.log("Contenido de files es:");
       console.log(files);
       material += "<div class='subtitles-practice'><img class='icons-practice' src='img/more.png'/>"+practices[i].title+"</div>";
@@ -238,15 +605,14 @@ function put_information(subtitle, text, practices){
       for (j = 0; j < files.length; j++){ // Se recorre cada archivo de la práctica
 
 
-        if (i ==0) {
+        if (j ==0) {
           material += "<table class='table table-striped'>";
-      //      "<tr><th>Nombre</th>"+
-      //      "<th>Descripción</th>"+
-    //      "<th>Descargar</th>"+
-    //      "</tr>";
+        //      "<tr><th>Nombre</th>"+
+        //      "<th>Descripción</th>"+
+        //      "<th>Descargar</th>"+
+        //      "</tr>";
 
         }
-        console.log("RUTA: " + files[i].path);
 
         material += "<tr><td>"+files[i].name+"<td>"+
         "<td>"+files[i].description+"<td>"+
@@ -254,16 +620,14 @@ function put_information(subtitle, text, practices){
         "<span class='glyphicon glyphicon-download'></span> Descargar"+
         "</a></td>"
         +"</tr>";
-       }
+      }
     
 
-    material += "</table>";
-
-    console.log(material);
+      material += "</table>";
     }
-    $("#practices-content").html(material);
-
   }
+  $("#practices-content").html(material);
+
 
 
 }

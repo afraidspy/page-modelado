@@ -154,6 +154,10 @@ display: inline-block;
     /* margin-bottom: 38px; */
 }
 
+#material {
+  display: none;
+}
+
 #main-title {
    /* color: #402600; */
    display: inline-block;
@@ -216,6 +220,7 @@ display: inline-block;
 
 .subtitles-practice {
   font-size: 14px;
+  padding: 0 0 40px 0;
 }
 
 .subtitles {
