@@ -5,21 +5,6 @@
 var info = null;
 
 $(document).ready(function(){
-  //
-  //   $.ajax({
-  //       url: "http://127.0.0.1:5984/paginas/182a3634ce7886abcd136ea84c00202f?rev=2-9628d0ea6418582fae9ff33ec0a2d756",
-  ////        url: "http://127.0.0.1:5984/paginas/182a3634ce7886abcd136ea84c00202f",
-  //       type: "GET",
-  //       contentType: "application/json",
-  ////       charset: "UTF-8",
-  //       //contentType: "application/x-www-form-urlencoded;charset=UTF-8",
-  //       async: true,
-  //       success: function (data){
-  ////        console.log   (data);
-  //       }
-  //   });
-  //
-  //
 
   //  $.ajax({
   //    url: "http://127.0.0.1:5984/paginas/182a3634ce7886abcd136ea84c00202f?rev=3-b6702d5eac7b34ac5203680048b12375",
@@ -36,12 +21,6 @@ $(document).ready(function(){
   //    }
   //  })
 
-
-  //  console.log("Antes de basde de datos");
-  //
-  //    var db = $.couch.db('paginas');
-  //
-  //    console.log("La base de datos es: " + db);
 
   info = {
     "info":[{
@@ -94,7 +73,6 @@ $(document).ready(function(){
         {
           title: "Práctica 2",
           archivos:[{
-
             name : "Estado.java",
             path : "../Material/Cap1/Laberinto/Material/Estado.java",
             description: "Contiene los estados para el Laberinto"
@@ -216,7 +194,6 @@ $(document).ready(function(){
           }
           ]
         }
-
         ]
       }]
     },
@@ -306,7 +283,6 @@ $(document).ready(function(){
         {
           title: "Práctica 2",
           archivos:[{
-
             name : "Estado.java",
             path : "../Material/Cap1/Laberinto/Material/Estado.java",
             description: "Contiene los estados para el Laberinto"
@@ -323,7 +299,6 @@ $(document).ready(function(){
           }
           ]
         }
-
         ]
       }]
     },
@@ -361,7 +336,6 @@ $(document).ready(function(){
         {
           title: "Práctica 2",
           archivos:[{
-
             name : "Estado.java",
             path : "../Material/Cap1/Laberinto/Material/Estado.java",
             description: "Contiene los estados para el Laberinto"
@@ -378,7 +352,6 @@ $(document).ready(function(){
           }
           ]
         }
-
         ]
       }]
     },
@@ -414,7 +387,6 @@ $(document).ready(function(){
         {
           title: "Práctica 2",
           archivos:[{
-
             name : "Estado.java",
             path : "../Material/Cap1/Laberinto/Material/Estado.java",
             description: "Contiene los estados para el Laberinto"
@@ -487,7 +459,6 @@ $(document).ready(function(){
           }
           ]
         }
-
         ]
       }]
     },
@@ -524,7 +495,6 @@ $(document).ready(function(){
         {
           title: "Práctica 2",
           archivos:[{
-
             name : "Estado.java",
             path : "../Material/Cap1/Laberinto/Material/Estado.java",
             description: "Contiene los estados para el Laberinto"
@@ -541,62 +511,40 @@ $(document).ready(function(){
           }
           ]
         }
-
         ]
       }]
-
     }
     ]
   };
 
+ //Se coloca la información de la introducción, que difiere de lás demás páginas por no tener material.
   put_information(info.info[0].title, info.info[0].contenido);
 
-  
-  $("li").click(function(){
+
+  $("li").click(function(){ //click en una opción del menú
     var chapter = $(this).attr("id").split("-")[1];
-
-    console.log("Viendo el capítulo " + chapter);  
-  
-
     if (chapter == 0){
       $("#material").css("display", "none");
       put_information(info.info[0].title, info.info[0].contenido);
     }else{
-      var material = info.info[chapter].material[0].practicas;
-      console.log("Material");
-      console.log(material);
       $("#material").css("display", "block");
-      put_information(info.info[chapter].title, info.info[chapter].contenido, material);
+      put_information(info.info[chapter].title, info.info[chapter].contenido, info.info[chapter].material[0].practicas);
     }
-
-  
   });
-
 });
 
 
 function put_information(subtitle, text, practices){
-  console.log("2Practrices es "  + practices);
-  console.log("Subtitle " + subtitle);
-  console.log("Texto: " + text);
-
-    
+      
   $("#chapter-resumen").html(
     "<div class='subtitles'>"+subtitle+"</div><br><br>"+
     text+
     "</div>"
     );  
-
   //Código para mostrar los archivos de cada capítulo en forma de tabla.
   if (practices != null)    {
-
-    console.log("Practices");
-
-    console.log(practices);
-
     var material = "";
     var files = null;
-
 
     for ( i = 0; i < practices.length; i++) {// Se recorre cada práctica
       if (i == 0) {
@@ -621,6 +569,7 @@ function put_information(subtitle, text, practices){
         "</a></td>"
         +"</tr>";
       }
+
       material += "</table>";
     }
   }
